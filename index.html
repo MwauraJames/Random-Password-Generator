@@ -9,24 +9,25 @@
   </head>
   <body>
     <div class="gen">
-      <p class="text">Click the Button below to Generate a Random password.</p>
+      <p class="text">Random Password Generator</p>
       <div class="low">
         <label class="char">Enter no of characters:</label>
         <input type="number" class="in" id="count" />
         <label class="up">Include Upppercase:</label>
         <input type="checkbox" id="check1" />
-        <label class="lowe">Include Lowercase:</label> 
+        <label class="lowe">Include Lowercase:</label>
         <input type="checkbox" id="check2" />
         <label class="numb">Include Numbers:</label>
-         <input
-          type="checkbox"
-          id="check3"
-        />
+        <input type="checkbox" id="check3" />
         <label class="spe">Include Special Characters:</label>
         <input type="checkbox" id="check4" />
       </div>
       <button class="but" onclick="pass()">Generate</button>
       <h3 id="ran"></h3>
+      <p class="text">Password Strength Checker.</p>
+      <input id="in" />
+      <button class="btn" onclick="checker()">Check</button>
+      <h3 id="out"></h3>
     </div>
   </body>
 </html>
